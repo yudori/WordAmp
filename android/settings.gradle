@@ -1,0 +1,3 @@
+rootProject.name = 'WordAmp'
+
+include ':app'
