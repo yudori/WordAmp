@@ -3,12 +3,10 @@ import {
     COLOR_LIGHT_GRAY,
     COLOR_BLACK,
     PRIMARY_COLOR,
-    SECONDARY_COLOR,
-    COLOR_LIGHT_BACKGROUND
+    COLOR_LIGHT_BACKGROUND,
 } from './values';
 
 const FONT_SIZE = 15;
-const FONT_WEIGHT = '500';
 
 export default Object.freeze({
     textBox: {
@@ -20,7 +18,7 @@ export default Object.freeze({
             borderRadius: 4,
             borderColor: COLOR_LIGHT_GRAY,
             borderWidth: 0,
-            marginBottom: 5
+            marginBottom: 5,
         },
         error: {
             color: COLOR_BLACK,
@@ -30,7 +28,7 @@ export default Object.freeze({
             borderRadius: 4,
             borderColor: PRIMARY_COLOR,
             borderWidth: 1,
-            marginBottom: 5
+            marginBottom: 5,
         },
         notEditable: {
             fontSize: FONT_SIZE,
@@ -41,7 +39,7 @@ export default Object.freeze({
             borderWidth: 1,
             marginBottom: 5,
             color: COLOR_GRAY,
-            backgroundColor: COLOR_LIGHT_BACKGROUND
-        }
-    },          
+            backgroundColor: COLOR_LIGHT_BACKGROUND,
+        },
+    },
 });

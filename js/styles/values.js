@@ -3,7 +3,7 @@
  */
 
 import {
-    Dimensions
+    Dimensions,
 } from 'react-native';
 
 export const SCREEN_WIDTH = Dimensions.get('window').width;
@@ -16,7 +16,6 @@ export const CONTAINER_WIDTH = SCREEN_WIDTH - (CONTAINER_DISTANCE_SIDE * 2);
 
 // Margins/ Paddings
 export const DISTANCE_TOP_SMALL = 20;
-
 
 
 /**
@@ -42,5 +41,4 @@ export const COLOR_BACKDROP = 'rgba(0, 0, 0, 0.6)';
 // Opacities
 export const COLOR_BLACK_OPACITY_30 = 'rgba(0, 0, 0, 0.3)';
 export const PRIMARY_COLOR_OPACITY_30 = 'rgba(226, 109, 92, 0.3)';
-
 

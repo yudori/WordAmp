@@ -1,21 +1,21 @@
-import { SERVER_URL } from '../../utils/config';
-import { checkHttpStatus } from '../../utils';
+import { SERVER_URL } from '../utils/config';
+import { checkHttpStatus } from '../utils';
 
 export function actionSendQuery(queryText) {
-    return fetch(SERVER_URL + '/', {
+    return fetch(`${SERVER_URL}/`, {
         method: 'POST',
         headers: {
-            'Accept': 'application/json',
+            Accept: 'application/json',
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(
             {
-                query: queryText
-            }
-        )
+                query: queryText,
+            },
+        ),
     })
     .then(checkHttpStatus)
     .then((response) => {
-        
+
     });
 }

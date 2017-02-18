@@ -7,3 +7,7 @@ export function checkHttpStatus(response) {
     error.response = response;
     throw error;
 }
+
+export function parseJSON(response) {
+    return response.json();
+}
