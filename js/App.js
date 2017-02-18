@@ -1,10 +1,18 @@
 import React from 'react';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import reducer from './reducers/query'
 import QueryPage from './containers/QueryPage';
 
+let store = createStore(reducer);
 
 class App extends React.Component{
     render(){
-        return <QueryPage />
+        return (
+            <Provider store={store}>
+                <QueryPage />
+            </Provider>
+        )
     }
 }
 
